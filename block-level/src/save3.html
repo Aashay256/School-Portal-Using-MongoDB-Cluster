@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header id="main-header">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-md-5">
+          <img src="i3.jpg">
+        </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="d-flex flex-column">
+            <div class="p-5 bg-white text-white">
+              <div class="name d-flex flex-row justify-content-between align-items-center">
+                <h1 class="display-4" style="color:black;">Sorabh Pant</h1>
+                <div><i class="fa fa-twitter"></i></div>
+                <div><i class="fa fa-facebook"></i></div>
+                <div><i class="fa fa-instagram"></i></div>
+                <div><i class="fa fa-github"></i></div>
+              </div>
+            </div>
+
+            <div class="p-4 bg-white">
+              Improve Comedian
+            </div>
+
+            <div>
+              <div class="d-flex flex-row text-white align-items-stretch text-center">
+                <div class="port-item p-4 bg-dark" data-toggle="collapse" data-target="#home">
+                  <i class="fa fa-home d-block"></i> Home
+                </div>
+
+
+                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                  <i class="fa fa-envelope d-block"></i> Contact
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <div id="home" class="collapse show">
+      <div class="card card-body bg-dark text-white py-5">
+        <h2>Welcome Sorabh Pant</h2>
+        <p class="lead">My wife is convince we'll have kids for Jokes.. </p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Stats</h3>
+        <p>Your past stats will be displayed here!</p>
+        <hr>
+        <h4>Percentage of people liking your post</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <h4>percentage of people following you</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:75%"></div>
+        </div>
+        <h4>Percentage of people unfollowing you</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:20%"></div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- CONTACT -->
+    <div id="contact" class="collapse">
+      <div class="card card-body bg-danger text-white py-5">
+        <h2>Jokes</h2>
+        <p>MY jokes are my jokes none of your jokes</p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Post a jokes here</h3>
+
+        <form>
+          <div class="form-group">
+
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-danger text-white">
+                <i class="fa fa-pencil"></i>
+              </span>
+              <textarea rows="5" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+  <script>
+    $('.port-item').click(function(){
+      $('.collapse').collapse('hide');
+    });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+  </script>
+</body>
+</html>

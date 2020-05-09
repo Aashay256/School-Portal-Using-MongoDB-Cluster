@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.new{
+    background-image: "img6.jpg";
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* footer css */
+.footer-clean {
+    padding:50px 0;
+    background-color:#fff;
+    color:#4b4c4d;
+}
+
+.footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+}
+
+.footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity:1;
+}
+
+.footer-clean .item.social {
+    text-align:right;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align:center;
+        padding-bottom:20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align:center;
+    }
+}
+
+.footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+    opacity:0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social > a {
+        margin-top:40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social > a {
+        margin-top:10px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+}
+
+
+/* Hrishikesh ka css */
+.container1
+{
+	width:1275px;
+	
+	margin:70px auto 0;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+.container1 .box
+{
+	position:relative;
+	width:300px;
+	height:300px;
+	background: #151e1e;
+	margin: 30px;
+
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.container1 .box .imgBox
+{
+	position: relative;
+	overflow: hidden;
+}
+
+.container1 .box .imgBox img
+{
+	max-width: 100%;
+	height: 300px;
+	transition: transform 2s;
+
+}
+
+.container1 .box:hover .imgBox img
+{
+	transform: scale(1.2);
+}
+
+.container1 .box .details
+{
+	position: absolute;
+	top: 10px;
+	left:10px;
+	bottom: 10px;
+	right: 10px;
+	background:rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+
+.container1 .box:hover  .details
+{
+	transform: scaleY(1);
+}
+
+.container1 .box .details .content
+{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+
+.container1 .box .details .content h2
+
+	{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #ff0;
+}
+
+.container1 .box .details .content p
+{
+	margin: 10 px 0 0;
+	padding: 0;
+	
+}
+
