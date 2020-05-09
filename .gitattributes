@@ -3,4 +3,4 @@ jquery.js -linguist-vendored
 platforms/* linguist-vendored=true
 plugins/* linguist-vendored=true
 public/* linguist-vendored=true
-*.css linguist-vendored
+*.css linguist-language=PHP
